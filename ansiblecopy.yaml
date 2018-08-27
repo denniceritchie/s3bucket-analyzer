@@ -1,0 +1,5 @@
+- hosts: solr-mixed
+  remote_user: ec2-user
+  tasks:
+      - name: copy file
+        copy: src=/home/minjar/db-data-config.xml dest=/usr/local/conf/db-data-config.xml
